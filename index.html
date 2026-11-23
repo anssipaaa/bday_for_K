@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday, Kolkol ♡</title>
+
+  <!-- Google Fonts: Cormorant Garamond (Serif Elegan) & Plus Jakarta Sans (Sans-serif Bersih) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,400&display=swap"
+    rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Confetti Canvas (Floating subtle particles on Page 2) -->
+  <canvas id="confettiCanvas" class="confetti-canvas" aria-hidden="true"></canvas>
+
+  <!-- Main Website Container (2 Pages Only) -->
+  <main class="site-container">
+
+    <!-- ============================================================
+         PAGE 1 — BIRTHDAY GREETING
+         ============================================================ -->
+    <section class="page page-1 active" id="page1" aria-label="Halaman Ucapan Ulang Tahun">
+      <div class="page-inner page-hero-layout">
+
+        <!-- Header Tagline -->
+        <header class="hero-header">
+          <p class="tagline">A SPECIAL EDITION FOR YOU</p>
+          <div class="divider-line"></div>
+        </header>
+
+        <!-- Main Heading -->
+        <div class="hero-title-group">
+          <h1 class="hero-title">Happy Birthday, Kolkol!</h1>
+          <p class="hero-subtitle">A little page made just for you.</p>
+        </div>
+
+        <!-- Main Featured Photo -->
+        <!-- TIPS: Kamu bisa langsung mengganti file 'assets/main-photo.jpeg' dengan fotomu sendiri -->
+        <div class="hero-photo-wrapper">
+          <figure class="hero-photo-card">
+            <div class="image-frame">
+              <img src="assets/main-photo.jpeg" alt="Foto Utama Kolkol" class="hero-img" id="heroMainPhoto">
+            </div>
+            <figcaption class="hero-photo-caption">
+              <span>Celebrating the wonderful soul you are ♡</span>
+            </figcaption>
+          </figure>
+        </div>
+
+        <!-- Short Heartfelt Birthday Message -->
+        <div class="hero-message">
+          <p class="message-text">
+            Another year, another story to tell. Semoga di usia yang baru ini, kamu selalu dikelilingi hal-hal baik,
+            dipertemukan dengan banyak kebahagiaan, dan punya lebih banyak alasan untuk tersenyum.
+          </p>
+        </div>
+
+        <!-- Call to Action Button to Page 2 -->
+        <div class="hero-cta">
+          <button type="button" class="btn-primary" id="btnGoToPage2">
+            <span>A Little Surprise for You</span>
+            <span class="btn-arrow" aria-hidden="true">→</span>
+          </button>
+        </div>
+
+        <!-- Minimal Footer Indicator -->
+        <footer class="hero-footer">
+          <span class="page-indicator-text">01 &mdash; 02</span>
+        </footer>
+
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         PAGE 2 — MEMORIES & LETTER
+         ============================================================ -->
+    <section class="page page-2" id="page2" aria-label="Kumpulan Kenangan dan Surat">
+      <div class="page-inner">
+
+        <!-- Top Navigation Bar on Page 2 -->
+        <nav class="page-top-nav">
+          <button type="button" class="btn-back-link" id="btnTopBack">
+            <span class="back-arrow" aria-hidden="true">←</span>
+            <span>Cover</span>
+          </button>
+          <span class="page-indicator-text">02 &mdash; 02</span>
+        </nav>
+
+        <!-- ========================================================
+             BAGIAN 1: A COLLECTION OF MEMORIES (10 FOTO LOKAL)
+             ======================================================== -->
+        <section class="memories-section">
+          <header class="section-header">
+            <span class="section-tag">ARCHIVED MOMENTS</span>
+            <h2 class="section-title">A Collection of Memories</h2>
+            <p class="section-desc">Kumpulan momen-momen kecil bersamamu yang selalu jadi cerita manis untuk diingat
+              kembali.</p>
+          </header>
+
+          <!-- Gallery Grid (8 Local Photo Slots: photo-01.jpeg s/d photo-08.jpeg) -->
+          <!-- TIPS: Ganti foto di folder 'assets/' dengan nama yang sama: photo-01.jpeg, photo-02.jpeg, dst -->
+          <div class="gallery-grid">
+
+            <!-- Foto 01 -->
+            <figure class="gallery-item" data-index="1">
+              <div class="gallery-image-box">
+                <img src="assets/photo-01.jpeg" alt="Kenangan 01 bersama Kolkol" class="gallery-img" loading="lazy">
+                <span class="photo-number">01</span>
+              </div>
+            </figure>
+
+            <!-- Foto 02 -->
+            <figure class="gallery-item" data-index="2">
+              <div class="gallery-image-box">
+                <img src="assets/photo-02.jpeg" alt="Kenangan 02 bersama Kolkol" class="gallery-img" loading="lazy">
+                <span class="photo-number">02</span>
+              </div>
+            </figure>
+
+            <!-- Foto 03 -->
+            <figure class="gallery-item" data-index="3">
+              <div class="gallery-image-box">
+                <img src="assets/photo-03.jpeg" alt="Kenangan 03 bersama Kolkol" class="gallery-img" loading="lazy">
+                <span class="photo-number">03</span>
+              </div>
+            </figure>
+
+            <!-- Foto 04 -->
+            <figure class="gallery-item" data-index="4">
+              <div class="gallery-image-box">
+                <img src="assets/photo-04.jpeg" alt="Kenangan 04 bersama Kolkol" class="gallery-img" loading="lazy">
+                <span class="photo-number">04</span>
+              </div>
+            </figure>
+
+            <!-- Foto 05 -->
+            <figure class="gallery-item" data-index="5">
+              <div class="gallery-image-box">
+                <img src="assets/photo-05.jpeg" alt="Kenangan 05 bersama Kolkol" class="gallery-img" loading="lazy">
+                <span class="photo-number">05</span>
+              </div>
+            </figure>
+
+            <!-- Foto 06 -->
+            <figure class="gallery-item" data-index="6">
+              <div class="gallery-image-box">
+                <img src="assets/photo-06.jpeg" alt="Kenangan 06 bersama Kolkol" class="gallery-img" loading="lazy">
+                <span class="photo-number">06</span>
+              </div>
+            </figure>
+
+            <!-- Foto 07 -->
+            <figure class="gallery-item" data-index="7">
+              <div class="gallery-image-box">
+                <img src="assets/photo-07.jpeg" alt="Kenangan 07 bersama Kolkol" class="gallery-img" loading="lazy">
+                <span class="photo-number">07</span>
+              </div>
+            </figure>
+
+            <!-- Foto 08 -->
+            <figure class="gallery-item" data-index="8">
+              <div class="gallery-image-box">
+                <img src="assets/photo-08.jpeg" alt="Kenangan 08 bersama Kolkol" class="gallery-img" loading="lazy">
+                <span class="photo-number">08</span>
+              </div>
+            </figure>
+
+          </div>
+        </section>
+
+        <!-- Elegant Subtle Section Divider -->
+        <div class="aesthetic-divider">
+          <span class="divider-symbol">✦</span>
+        </div>
+
+        <!-- ========================================================
+             BAGIAN 2: A LITTLE LETTER FOR YOU (SURAT KERTAS MINIMALIS)
+             ======================================================== -->
+        <section class="letter-section">
+          <header class="section-header">
+            <span class="section-tag">A PERSONAL NOTE</span>
+            <h2 class="section-title">A Little Letter for You</h2>
+          </header>
+
+          <!-- Minimalist Stationary Paper Letter -->
+          <article class="letter-paper">
+            <div class="paper-watermark">FOR KOLKOL</div>
+
+            <div class="letter-header">
+              <span class="letter-date">A Special Day</span>
+              <span class="letter-salutation">For u, Kolkol ♡</span>
+            </div>
+
+            <!-- Isi Surat (Mudah diedit langsung di bawah ini) -->
+            <div class="letter-content">
+              <p>
+                Haiii Kolkol, happy Birthday yaa!
+              </p>
+              <p>
+                Semoga kamu selalu sehat, selalu happy, dan pundaknya selalu ringan dalam menjalani hari-hari. Semoga
+                setiap langkahmu selalu dipermudah sama Allah, segala urusan dilancarkan, dan apa pun yang sedang kamu
+                usahakan bisa mendapatkan hasil terbaik.
+              </p>
+              <p>
+                Thank you udah mau jadi temen aku, udah mau nemenin aku saat aku sedih, udah mau dengerin semua cerita
+                dan keluh kesahkuuu. Makasih udah jadi salah satu orang yang bisa aku ajak berbagi banyak hal. I'm
+                really grateful to have you as my friend.
+              </p>
+              <p>
+                Jangan lupa bahagia dan jangan terlalu keras sama diri sendiri yaa. Semangat terus, Kolkol! May Allah
+                bless you always. 🤍
+              </p>
+            </div>
+
+            <!-- Letter Sign-off -->
+            <div class="letter-signature">
+              <p class="sign-from">With love, always ♡,</p>
+              <p class="sign-name">cipa cantik aw</p>
+            </div>
+
+            <!-- Final Birthday Wish Closing -->
+            <div class="letter-final-wishes">
+              <div class="ornament-line"></div>
+              <h3 class="final-wish-title">Happy Birthday Once Again, Kolkol!</h3>
+              <p class="final-wish-subtitle">Semoga hari-harimu ke depan selalu dipenuhi kebahagiaan yang menenangkan ♡
+              </p>
+            </div>
+          </article>
+
+          <!-- Bottom Navigation / Replay Actions -->
+          <div class="letter-actions">
+            <button type="button" class="btn-secondary" id="btnTriggerConfetti">
+              <span>Tabur Bunga & Cinta</span>
+              <span class="btn-sparkle">✨</span>
+            </button>
+            <button type="button" class="btn-primary" id="btnBackToHome">
+              <span class="btn-arrow-left" aria-hidden="true">←</span>
+              <span>Kembali ke Halaman Pertama</span>
+            </button>
+          </div>
+
+        </section>
+
+        <!-- Page 2 Footer -->
+        <footer class="site-footer">
+          <p>Made with sincere care for Kolkol &bull; Forever Besties</p>
+        </footer>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Clean Photo Lightbox Modal (For viewing any memory photo in detail) -->
+  <div class="lightbox-modal" id="lightboxModal" aria-hidden="true" role="dialog" aria-label="Tampilan Foto">
+    <div class="lightbox-backdrop" id="lightboxBackdrop"></div>
+    <div class="lightbox-content">
+      <button type="button" class="lightbox-close" id="lightboxClose" aria-label="Tutup foto">&times;</button>
+      <div class="lightbox-img-wrapper">
+        <img src="" alt="Detail foto" id="lightboxImg" class="lightbox-img">
+      </div>
+      <p class="lightbox-caption" id="lightboxCaption"></p>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+
+</html>
